@@ -1,0 +1,15 @@
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\TotalServiceManager.exe.config
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\TotalServiceManager.exe
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\TotalServiceManager.pdb
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\TorrentBTService.dll
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\MonoTorrent.dll
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\MonoTorrent.Dht.dll
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\TorrentBTService.pdb
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\MonoTorrent.pdb
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\bin\Debug\MonoTorrent.Dht.pdb
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\obj\Debug\TotalServiceManager.csprojResolveAssemblyReference.cache
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\obj\Debug\TotalServiceManager.exe
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\TotalServiceManager\obj\Debug\TotalServiceManager.pdb
+C:\Users\kailn\Source\Repos\TotalManager\TotalServiceManager\bin\Debug\TotalServiceManager.exe.config
+C:\Users\kailn\Source\Repos\TotalManager\TotalServiceManager\obj\Debug\TotalServiceManager.exe
+C:\Users\kailn\Source\Repos\TotalManager\TotalServiceManager\obj\Debug\TotalServiceManager.pdb

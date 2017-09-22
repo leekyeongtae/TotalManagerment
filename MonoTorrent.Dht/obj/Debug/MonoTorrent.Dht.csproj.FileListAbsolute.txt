@@ -1,0 +1,10 @@
+C:\Users\kailn\Source\Repos\stracker\build\MonoTorrent\Debug\MonoTorrent.Dht.dll
+C:\Users\kailn\Source\Repos\stracker\build\MonoTorrent\Debug\MonoTorrent.Dht.pdb
+C:\Users\kailn\Source\Repos\stracker\S-Tracker\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.csprojResolveAssemblyReference.cache
+C:\Users\kailn\Source\Repos\stracker\S-Tracker\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.dll
+C:\Users\kailn\Source\Repos\stracker\S-Tracker\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.pdb
+C:\Users\kailn\Source\Repos\S_tracker\build\MonoTorrent\Debug\MonoTorrent.Dht.dll
+C:\Users\kailn\Source\Repos\S_tracker\build\MonoTorrent\Debug\MonoTorrent.Dht.pdb
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.csprojResolveAssemblyReference.cache
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.dll
+C:\Users\kailn\Source\Repos\S_tracker\TotalServiceManager\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.pdb
