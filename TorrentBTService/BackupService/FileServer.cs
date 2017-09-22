@@ -27,6 +27,7 @@ namespace TorrentBTService
         private StateThread StateObject;
         private TorrentManage Torrent;
         private Thread WorkSocketThread;
+        private Thread TimerMessageQueue;
 
 
         public FileServer(int port = 8800,int listen = 1)
@@ -47,7 +48,13 @@ namespace TorrentBTService
             StateObject.WaitMessageDispacher = false;
 
             WorkSocketThread = new Thread(delegate () {
-                while(StateObject.StartMessageDispacher)
+
+                foreach (string path in Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory + "\\Torrents"))
+                {
+                    Torrent.addTorrent(path, AppDomain.CurrentDomain.BaseDirectory + "\\Files");
+                }
+
+                while (StateObject.StartMessageDispacher)
                 {
                     Thread.Sleep(1);
 
@@ -62,6 +69,54 @@ namespace TorrentBTService
                     AceptThread.Start();
                 }
             });
+            WorkSocketThread.Start();
+
+            TimerMessageQueue = new Thread(delegate () {
+                long Tick = 0;
+                while(StateObject.StartMessageDispacher)
+                {
+                    Thread.Sleep(1);
+
+                    if ((Tick %= 500) == 0)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Seeding Files : {0}", Torrent.TotalSeed);
+                        Console.WriteLine("Download Files : {0}", Torrent.TotalDownload);
+                        Console.WriteLine("Stoped Files : {0}", Torrent.TotalStop);
+                        Console.WriteLine("Recived Files : {0}", Torrent.TotalNames.Count());
+                        Console.WriteLine("Uploading Files : {0}", Torrent.TotalUpload);
+                    }
+
+                    if ((Tick %= 10000) == 0)
+                    {
+                        List<int> idx = Torrent.IsDelay();
+                        if (idx.Count > 0)
+                        {
+                            foreach (int _idx in idx)
+                            {
+                                Torrent.StopTorrent(_idx);
+                                Torrent.ResumeTorrent(_idx);
+                                Console.WriteLine("{0} is Restart", _idx);
+                            }
+                        }
+                    }
+
+                    if((Tick %= 300000) == 0)
+                    {
+                        if(Torrent.TotalUpload == 0)
+                        {
+                            Torrent.RestartAll();
+                        }
+                    }
+                    Tick++;
+
+                    if (Tick == 600000)
+                        Tick = 0;
+                }
+            });
+            TimerMessageQueue.Start();
+            
+            
         }
 
         private void AcceptDispather(TcpClient Handler)
@@ -82,6 +137,7 @@ namespace TorrentBTService
                 }
 
                 Handler.Close();
+                Console.WriteLine("Received File..");
                 Torrent.addTorrent(Torrentpath, Savepath);
             }
         }
