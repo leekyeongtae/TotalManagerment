@@ -370,7 +370,4 @@
     </MonoDevelop>
     <VisualStudio />
   </ProjectExtensions>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
 </Project>
