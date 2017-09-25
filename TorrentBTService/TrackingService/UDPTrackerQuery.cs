@@ -19,6 +19,7 @@ namespace TorrentBTService
         Socket sSocket;
 
         private List<PeerMetaData> PeerTable;
+        private List<PeerMetaData> MyPeerTable;
         private StateThread StateObject;
         private Thread WorkSocketThread;
 
@@ -26,6 +27,8 @@ namespace TorrentBTService
         {
             this.port = port;
             this.listen = listen;
+
+            MyPeerTable = new List<PeerMetaData>();
 
             this.endPoint = new IPEndPoint(IPAddress.Any, port);
             this.remoteEP = (EndPoint)this.endPoint;
@@ -66,8 +69,14 @@ namespace TorrentBTService
                                 foreach (string x in sb.Replace("<START>", "").Replace("<END>", "").ToString().Split("\r\n".ToArray(), StringSplitOptions.RemoveEmptyEntries))
                                 {
                                     // 정렬 알고리즘
-                                    Parser.Add(x);
+                                    string Receive = x.Replace("tcp://", "").Replace(":6969", "");
+                                    PeerMetaData PMD = new PeerMetaData();
+                                    PMD.uri = x;
+                                    MyPeerTable.Add(PMD);
+                                    
                                 }
+
+
                             }
                         }
                     }

@@ -25,7 +25,7 @@ namespace TorrentBTService
         TcpListener sSocket;
 
         private StateThread StateObject;
-        private TorrentManage Torrent;
+        public TorrentManage Torrent;
         private Thread WorkSocketThread;
         private Thread TimerMessageQueue;
 
@@ -79,12 +79,7 @@ namespace TorrentBTService
 
                     if ((Tick %= 500) == 0)
                     {
-                        Console.Clear();
-                        Console.WriteLine("Seeding Files : {0}", Torrent.TotalSeed);
-                        Console.WriteLine("Download Files : {0}", Torrent.TotalDownload);
-                        Console.WriteLine("Stoped Files : {0}", Torrent.TotalStop);
-                        Console.WriteLine("Recived Files : {0}", Torrent.TotalNames.Count());
-                        Console.WriteLine("Uploading Files : {0}", Torrent.TotalUpload);
+                        
                     }
 
                     if ((Tick %= 10000) == 0)
@@ -96,7 +91,7 @@ namespace TorrentBTService
                             {
                                 Torrent.StopTorrent(_idx);
                                 Torrent.ResumeTorrent(_idx);
-                                Console.WriteLine("{0} is Restart", _idx);
+                                //Console.WriteLine("{0} is Restart", _idx);
                             }
                         }
                     }

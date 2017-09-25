@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace TorrentBTService
 {
-    internal class TorrentManage : IDisposable
+    public class TorrentManage : IDisposable
     {
         private List<TorrentFile> torrentFiles = new List<TorrentFile>();
 

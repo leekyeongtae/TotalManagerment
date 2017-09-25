@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace TorrentBTService
 {
-    public struct PeerMetaData
+    public class PeerMetaData
     {
         public int Idx;
         public string uri;
@@ -29,7 +29,7 @@ namespace TorrentBTService
         private StateThread StateObject;
         private Thread WorkSocketThread;
 
-        private List<PeerMetaData> PeerTable;
+        public List<PeerMetaData> PeerTable;
 
 
         public TCPTrackerServer(int port = 8900, int listen = 1)
@@ -74,13 +74,15 @@ namespace TorrentBTService
                     AceptThread.Start();
                 }
             });
+
+            WorkSocketThread.Start();
         }
 
         private void AcceptDispather(PeerMetaData ConnObject)
         {
             using (NetworkStream stream = ConnObject.handler.GetStream())
             {
-                byte[] buffer = new byte[1024];
+                byte[] buffer = new byte[128];
                 int ReceiveBytes = 0;
                 long TickTime = 0;
 
@@ -113,7 +115,7 @@ namespace TorrentBTService
             }
 
             ConnObject.handler.Close();
-            PeerTable.Remove(ConnObject);
+            PeerTable.RemoveAt(ConnObject.Idx);
 
         }
         public void Resume()
