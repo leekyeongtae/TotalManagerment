@@ -13,3 +13,6 @@ C:\Users\kailn\Source\Repos\build\MonoTorrent\Debug\MonoTorrent.Dht.pdb
 C:\Users\kailn\Source\Repos\TotalManagerService\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.csprojResolveAssemblyReference.cache
 C:\Users\kailn\Source\Repos\TotalManagerService\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.dll
 C:\Users\kailn\Source\Repos\TotalManagerService\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.pdb
+C:\Users\kailn\Source\Repos\TotalManager\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.csprojResolveAssemblyReference.cache
+C:\Users\kailn\Source\Repos\TotalManager\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.dll
+C:\Users\kailn\Source\Repos\TotalManager\MonoTorrent.Dht\obj\Debug\MonoTorrent.Dht.pdb

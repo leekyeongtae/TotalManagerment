@@ -16,3 +16,12 @@ C:\Users\kailn\Source\Repos\TotalManagerService\TorrentBTService\bin\Debug\MonoT
 C:\Users\kailn\Source\Repos\TotalManagerService\TorrentBTService\obj\Debug\TorrentBTService.csprojResolveAssemblyReference.cache
 C:\Users\kailn\Source\Repos\TotalManagerService\TorrentBTService\obj\Debug\TorrentBTService.dll
 C:\Users\kailn\Source\Repos\TotalManagerService\TorrentBTService\obj\Debug\TorrentBTService.pdb
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\bin\Debug\TorrentBTService.dll
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\bin\Debug\TorrentBTService.pdb
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\bin\Debug\MonoTorrent.Dht.dll
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\bin\Debug\MonoTorrent.dll
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\bin\Debug\MonoTorrent.Dht.pdb
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\bin\Debug\MonoTorrent.pdb
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\obj\Debug\TorrentBTService.csprojResolveAssemblyReference.cache
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\obj\Debug\TorrentBTService.dll
+C:\Users\kailn\Source\Repos\TotalManager\TorrentBTService\obj\Debug\TorrentBTService.pdb
